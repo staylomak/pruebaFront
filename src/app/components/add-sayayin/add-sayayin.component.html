@@ -1,0 +1,15 @@
+<div class="col">
+  <h2 class="text-center">ADD Cliente</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="firstName">Nombre:</label>
+      <input formControlName="name" placeholder="Nombre" name="name" class="form-control" id="name" required>
+    </div>
+
+
+
+    <button class="btn btn-success">Aceptar</button>
+    <button class="btn btn-primary" routerLink="list-sayayin">Regresar</button>
+  </form>
+</div>

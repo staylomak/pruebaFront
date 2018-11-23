@@ -1,0 +1,28 @@
+<div class="col">
+  <h2>Sayayins</h2>
+  <button class="btn btn-primary" (click)="addSayayin()">Agregar Sayayins</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Id</th>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sayayin of sayayins">
+        <td class="hidden">{{ sayayin.id }}</td>
+        <td>{{ sayayin.id }}</td>
+        <td>{{ sayayin.name }}</td>
+        <td>
+          <button class="btn btn-success" (click)="editSayayin(sayayin)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deleteSayayin(sayayin)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

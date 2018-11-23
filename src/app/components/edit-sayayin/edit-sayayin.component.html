@@ -1,0 +1,13 @@
+<div class="col">
+  <h2 class="text-center">Editar Sayayin</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+      <input formControlName="name" placeholder="Nombre" name="name" class="form-control" id="name" required>
+    </div>
+
+    <button class="btn btn-success">Aceptar</button>
+    <button class="btn btn-primary" routerLink="list-sayayin">Regresar</button>
+  </form>
+</div>
